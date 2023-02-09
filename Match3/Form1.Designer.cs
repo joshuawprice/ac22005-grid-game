@@ -1,6 +1,6 @@
 ﻿namespace Match3
 {
-    partial class Form1
+    partial class Match3
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.Title = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // Title
+            // 
+            this.Title.AutoSize = true;
+            this.Title.Font = new System.Drawing.Font("Segoe Print", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Title.Location = new System.Drawing.Point(118, 0);
+            this.Title.Name = "Title";
+            this.Title.Size = new System.Drawing.Size(479, 168);
+            this.Title.TabIndex = 0;
+            this.Title.Text = "Match 3";
+            // 
+            // Match3
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(714, 881);
+            this.Controls.Add(this.Title);
+            this.Name = "Match3";
+            this.Text = "Match 3";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private Label Title;
     }
 }
