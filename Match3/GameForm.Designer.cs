@@ -1,6 +1,6 @@
-﻿namespace Match3
+﻿namespace Match_Mania
 {
-    partial class Match3
+    partial class Match_Mania
     {
         /// <summary>
         ///  Required designer variable.

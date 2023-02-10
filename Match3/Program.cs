@@ -1,4 +1,4 @@
-namespace Match3
+namespace Match_Mania
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace Match3
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Match3());
+            Application.Run(new Match_Mania());
         }
     }
 }
