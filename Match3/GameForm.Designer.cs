@@ -1,6 +1,6 @@
 ﻿namespace Match_Mania
 {
-    partial class Match_Mania
+    partial class MatchMania
     {
         /// <summary>
         ///  Required designer variable.
@@ -35,20 +35,22 @@
             // 
             this.Title.AutoSize = true;
             this.Title.Font = new System.Drawing.Font("Segoe Print", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Title.Location = new System.Drawing.Point(118, 0);
+            this.Title.Location = new System.Drawing.Point(169, 0);
+            this.Title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(479, 168);
+            this.Title.Size = new System.Drawing.Size(720, 252);
             this.Title.TabIndex = 0;
             this.Title.Text = "Match 3";
             // 
-            // Match3
+            // MatchMania
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(714, 881);
+            this.ClientSize = new System.Drawing.Size(1020, 1452);
             this.Controls.Add(this.Title);
-            this.Name = "Match3";
-            this.Text = "Match 3";
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "MatchMania";
+            this.Text = "Match Mania";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -13,7 +13,14 @@ namespace Match_Mania {
 
         private Colors _color;
 
-        public Point Position { get; init; }
+        private Point _position;
+        public Point Position {
+            get => _position;
+            set {
+                _position = value;
+                SetBounds(value.X * 75 + 20, value.Y * 75 + 188, 75, 75);
+            }
+        }
 
         public enum Colors {
             Green,
@@ -82,11 +89,19 @@ namespace Match_Mania {
                     return Colors.Green;
             }
         }
+        
+        public bool IsAdjacent(Tile tile) {
+            Point pos = tile.Position;
+            if ((pos.X == Position.X + 1 || pos.X == Position.X - 1) && pos.Y == Position.Y
+                || (pos.Y == Position.Y + 1 || pos.Y == Position.Y - 1) && pos.X == Position.X) {
+                return true;
+            }
 
+            return false;
+        }
 
         public Tile(Point position) {
             Position = position;
-            SetBounds(position.X * 75 + 20, position.Y * 75 + 188, 75, 75);
             Color = genColor();
         }
     }
