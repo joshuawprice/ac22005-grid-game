@@ -11,8 +11,6 @@ namespace Match_Mania {
     internal class Tile : Button {
         private static Random s_rng = new Random();
 
-        private Colors _color;
-
         private Point _position;
         public Point Position {
             get => _position;
@@ -32,6 +30,7 @@ namespace Match_Mania {
             Gold
         }
 
+        private Colors _color;
         public Colors Color {
             get => _color;
             init {
@@ -62,6 +61,7 @@ namespace Match_Mania {
             }
         }
 
+        // Generate random color, to be used for each new tile upon creation.
         private Colors genColor() {
             switch (s_rng.Next(0, 7)) {
                 case 0:
@@ -84,6 +84,7 @@ namespace Match_Mania {
             }
         }
         
+        // Returns true if there is a tile horizontal or vertically adjacent to the current tile.
         public bool IsAdjacent(Tile tile) {
             Point pos = tile.Position;
             if ((pos.X == Position.X + 1 || pos.X == Position.X - 1) && pos.Y == Position.Y
