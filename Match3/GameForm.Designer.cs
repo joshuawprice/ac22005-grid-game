@@ -49,6 +49,7 @@
             this.ClientSize = new System.Drawing.Size(1020, 1452);
             this.Controls.Add(this.Title);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
             this.Name = "MatchMania";
             this.Text = "Match Mania";
             this.ResumeLayout(false);

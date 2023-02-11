@@ -35,33 +35,27 @@ namespace Match_Mania {
         public Colors Color {
             get => _color;
             init {
+                _color = value;
                 switch (value) {
                     case Colors.Green:
-                        _color = Colors.Green;
                         BackColor = System.Drawing.Color.Green;
                         break;
                     case Colors.Orange:
-                        _color = Colors.Orange;
                         BackColor = System.Drawing.Color.Orange;
                         break;
                     case Colors.Red:
-                        _color = Colors.Red;
                         BackColor = System.Drawing.Color.Red;
                         break;
                     case Colors.Blue:
-                        _color = Colors.Blue;
                         BackColor = System.Drawing.Color.Blue;
                         break;
                     case Colors.Pink:
-                        _color = Colors.Pink;
                         BackColor = System.Drawing.Color.Pink;
                         break;
                     case Colors.Turquoise:
-                        _color = Colors.Turquoise;
                         BackColor = System.Drawing.Color.Turquoise;
                         break;
                     case Colors.Gold:
-                        _color = Colors.Gold;
                         BackColor = System.Drawing.Color.Gold;
                         break;
                 }
